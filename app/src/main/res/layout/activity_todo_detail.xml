@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.arshdeep.todolist.TodoDetailActivity">
+
+    <Button
+        android:id="@+id/b_isubmit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_shape"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:text="OK"
+        android:textColor="#CFD8DC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:background="#455A64"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:id="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/tv_itask"
+            android:layout_width="146dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="2"
+            android:background="#37474F"
+            android:gravity="center"
+            android:text="Task"
+            android:textColor="#CFD8DC"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_itask"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:background="#ECEFF1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_itask"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_itask" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_idate"
+        android:layout_width="146dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="2"
+        android:background="#455A64"
+        android:gravity="center"
+        android:text="Date"
+        android:textColor="#CFD8DC"
+        android:textSize="20sp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <EditText
+        android:id="@+id/et_idate"
+        android:layout_width="146dp"
+        android:layout_height="30dp"
+        android:layout_weight="2"
+        android:background="#ECEFF1"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_idate"
+        app:layout_constraintBottom_toBottomOf="@+id/et_itime"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/tv_itime"
+        android:layout_width="146dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="2"
+        android:background="#37474F"
+        android:gravity="center"
+        android:text="Time"
+        android:textColor="#CFD8DC"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/et_itime"
+        android:layout_width="146dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="2"
+        android:background="#ECEFF1"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_itime" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="338dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Remind Me"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <EditText
+        android:id="@+id/et_idescription"
+        android:layout_width="336dp"
+        android:layout_height="149dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="9.40"
+        android:background="#CFD8DC"
+        android:ems="10"
+        android:gravity="top|center"
+        android:hint="Enter the Description"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="192dp"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="283dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="283dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>

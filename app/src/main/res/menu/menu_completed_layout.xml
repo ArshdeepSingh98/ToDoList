@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Return"
+        android:icon="@drawable/return_main"
+        android:id="@+id/return_main"></item>
+    <item
+        android:title="Clear All"
+        android:icon="@drawable/clear_completed"
+        android:id="@+id/clear_completed"></item>
+</menu>

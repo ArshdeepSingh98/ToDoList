@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Add"
+        android:icon="@drawable/add"
+        android:id="@+id/add_item"></item>
+    <item
+        android:title="Remove"
+        android:icon="@drawable/remove"
+        android:id="@+id/remove_item"></item>
+    <item
+        android:title="Undo"
+        android:icon="@drawable/undo"
+        android:id="@+id/undo_delete"></item>
+</menu>

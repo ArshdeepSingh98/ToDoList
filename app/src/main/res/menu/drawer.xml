@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/remove_all"
+            android:checked="true"
+            android:title="Remove All" />
+        <item
+            android:id="@+id/favorites"
+            android:title="Favorites" />
+    </group>
+
+    <item android:title="Info">
+        <menu>
+            <item
+                android:title="About Us"
+                android:id="@+id/about_us"/>
+            <item
+                android:title="Contact Us"
+                android:id="@+id/contact_us"/>
+            <item
+                android:title="Feedback"
+                android:id="@+id/feedback"/>
+        </menu>
+    </item>
+
+</menu>

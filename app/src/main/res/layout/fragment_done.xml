@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arshdeep.todolist.DoneFragment">
+
+    <ListView
+        android:id="@+id/lv_done"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:layout_weight="0.31" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bm_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_completed_layout" />
+
+</FrameLayout>
