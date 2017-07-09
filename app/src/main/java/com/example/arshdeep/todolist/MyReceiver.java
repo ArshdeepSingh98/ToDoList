@@ -22,9 +22,10 @@ public class MyReceiver extends BroadcastReceiver{
     @Override
     public void onReceive(Context context, Intent intent) {
 
+        String title = intent.getStringExtra("notification_title");
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context)
                 .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle("My Notification")
+                .setContentTitle(title + " task reminder.")
                 .setAutoCancel(true)
                 .setContentText("Alarm!!!");
         Intent resultIntent = new Intent(context , HomeFragment.class);

@@ -110,6 +110,7 @@ public class TodoDetailActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 Intent i = new Intent(TodoDetailActivity.this , MyReceiver.class);
+                i.putExtra("notification_title",task);
                 pendingIntentAlarm = PendingIntent.getBroadcast(TodoDetailActivity.this,1,i,0);
                 a = (AlarmManager) TodoDetailActivity.this.getSystemService(Context.ALARM_SERVICE);
                 String date = et_idate.getText().toString();
